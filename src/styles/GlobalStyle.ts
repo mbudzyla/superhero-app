@@ -5,6 +5,7 @@ import type { Theme } from './types';
 const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
   :root, button {
     font-family: 'Arial', Helvetica, sans-serif;
+    font: 14px/18px ${({ theme }) => theme.font};
   }
 
   html {

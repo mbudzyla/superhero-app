@@ -33,8 +33,15 @@ class MyDocument extends Document {
 
   render(): ReactElement {
     return (
-      <Html lang="pl-pl">
-        <Head />
+      <Html lang="en-gb">
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/MavenPro-Regular.woff2"
+            as="font"
+            type="font/woff2"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
