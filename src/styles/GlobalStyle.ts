@@ -17,6 +17,12 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     margin: 0;
     padding: 0;
   }
+  
+  a {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 export default GlobalStyle;
