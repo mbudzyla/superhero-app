@@ -17,12 +17,12 @@ const theme: Theme = {
   maxWidth: `${breakpoints.largeDesktop}px`,
   palette: {
     primary: {
-      base: '#3E78B2',
+      base: '#274060',
       text: '#FFFFFF',
       grey: '#919293',
     },
     secondary: {
-      base: '#004BA8',
+      base: '#5899E2',
       text: '#000000',
     },
   },
