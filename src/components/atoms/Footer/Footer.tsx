@@ -1,4 +1,4 @@
-import { StyledFooter } from '@molecules/Footer/Footer.styled';
+import { StyledFooter } from '@atoms/Footer/Footer.styled';
 
 import type { FooterType } from './Footer.types';
 

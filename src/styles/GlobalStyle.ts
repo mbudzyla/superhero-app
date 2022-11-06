@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     background-color: transparent;
     text-decoration: none;
     color: black;
+    text-align: center;
   }
 `;
 

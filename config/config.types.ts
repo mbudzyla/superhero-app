@@ -3,4 +3,7 @@ export interface Translations {
     searchPlaceholder: string;
     searchButtonAriaLabel: string;
   };
+  heroCard: {
+    checkBio: 'Check bio';
+  };
 }

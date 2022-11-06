@@ -5,4 +5,7 @@ export const translations: Translations = {
     searchPlaceholder: 'Find hero...',
     searchButtonAriaLabel: 'Click to search',
   },
+  heroCard: {
+    checkBio: 'Check bio',
+  },
 };
