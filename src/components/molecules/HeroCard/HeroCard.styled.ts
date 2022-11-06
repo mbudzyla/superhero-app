@@ -8,13 +8,13 @@ export const HeroCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px;
+  margin: auto;
   max-width: 210px;
   padding: 10px;
   transition: 0.5s;
 
   &:hover {
-    transform: scale(102%);
+    transform: scale(98%);
   }
 
   @media ${({ theme }) => theme.media.desktop} {

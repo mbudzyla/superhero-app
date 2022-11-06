@@ -1,13 +1,13 @@
 import type { Theme } from './types';
 
-const breakpoints = {
+export const breakpoints = {
   largeDesktop: 1140,
   desktop: 992,
   tablet: 768,
   mobile: 320,
 };
 
-const theme: Theme = {
+export const theme: Theme = {
   media: {
     mobile: `screen and (min-width: ${breakpoints.mobile}px)`,
     tablet: `screen and (min-width: ${breakpoints.tablet}px)`,

@@ -1,5 +1,7 @@
 import 'styled-components';
 
+import type { ReactElement, ReactNode } from 'react';
+
 export interface SingleColorPalette {
   base: string;
   grey?: string;
@@ -25,3 +27,10 @@ export interface Theme {
     [key in ZIndexes]: number;
   };
 }
+
+export type Children =
+  | ReactNode
+  | Array<ReactNode>
+  | ReactElement
+  | Array<ReactElement>
+  | string;

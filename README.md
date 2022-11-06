@@ -18,3 +18,7 @@ All packages are kept up-to-date
 
 * `npm >= 7`
 * `node >= 14`
+
+
+Vulnerabilities only exists for dev environment.
+To check vulnerabilities use `npm audit --production`
