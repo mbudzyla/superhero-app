@@ -2,7 +2,7 @@ import type { ReactElement } from 'react';
 
 export interface CardElementProps {
   property: string;
-  description: string;
+  description: string | number;
 }
 
 export interface TextCardProps {

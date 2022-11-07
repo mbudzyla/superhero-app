@@ -14,6 +14,7 @@ export const theme: Theme = {
     desktop: `screen and (min-width: ${breakpoints.desktop}px)`,
     largeDesktop: `screen and (min-width: ${breakpoints.largeDesktop}px)`,
   },
+  header: '80px',
   maxWidth: `${breakpoints.largeDesktop}px`,
   palette: {
     primary: {

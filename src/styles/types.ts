@@ -21,6 +21,7 @@ export interface Theme {
   media: {
     [key in ViewportName]: string;
   };
+  header: string;
   maxWidth: string;
   font: string;
   zIndexes: {

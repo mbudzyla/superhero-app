@@ -17,22 +17,20 @@ export const HeroHeader: HeroHeaderType = ({
   race,
   image,
 }) => (
-  <>
-    <HeroWrapper>
-      <HeroBackground>
-        <img alt={name} src={image.imageSizes.md} />
-      </HeroBackground>
-      <BackgroundBlur />
-      <HeroImage {...image} />
+  <HeroWrapper>
+    <HeroBackground>
+      <img alt={name} src={image.imageSizes.md} />
+    </HeroBackground>
+    <BackgroundBlur />
+    <HeroImage {...image} />
 
-      <HeroDescription>
-        <HeroName>{name}</HeroName>
-        <div>
-          <HeroFullName>{fullName}</HeroFullName>
-          <RegularParagraph>{gender}</RegularParagraph>
-          <RegularParagraph>{race}</RegularParagraph>
-        </div>
-      </HeroDescription>
-    </HeroWrapper>
-  </>
+    <HeroDescription>
+      <HeroName>{name}</HeroName>
+      <div>
+        <HeroFullName>{fullName}</HeroFullName>
+        <RegularParagraph>{gender}</RegularParagraph>
+        <RegularParagraph>{race}</RegularParagraph>
+      </div>
+    </HeroDescription>
+  </HeroWrapper>
 );

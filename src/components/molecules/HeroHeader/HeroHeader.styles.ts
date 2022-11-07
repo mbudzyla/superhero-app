@@ -13,6 +13,7 @@ export const HeroWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 50px 0;
 
   @media ${({ theme }) => theme.media.desktop} {
     flex-direction: row;
