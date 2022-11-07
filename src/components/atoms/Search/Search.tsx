@@ -12,10 +12,13 @@ const {
   search: { searchPlaceholder, searchButtonAriaLabel },
 } = translations;
 
-export const Search: SearchType = () => (
-  <SearchForm>
-    <SearchInput placeholder={searchPlaceholder} />
-    <SearchButton aria-label={searchButtonAriaLabel}>
+export const Search: SearchType = ({ onChange, onButtonClick }) => (
+  <SearchForm onSubmit={e => e.preventDefault()}>
+    <SearchInput
+      placeholder={searchPlaceholder}
+      onChange={event => onChange(event.target.value)}
+    />
+    <SearchButton aria-label={searchButtonAriaLabel} onClick={onButtonClick}>
       <SearchIcon />
     </SearchButton>
   </SearchForm>

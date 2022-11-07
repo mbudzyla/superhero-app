@@ -11,12 +11,13 @@ const {
 } = translations;
 
 export const HomePageTemplate: HomePageTemplateType = ({ randomHeroes }) => {
-  const heroesList = useHomepageTemplate(randomHeroes);
+  const { heroesList, setQuery, fetchSearchResults } =
+    useHomepageTemplate(randomHeroes);
 
   return (
     <ContentWrapper>
       <HeroCardCarousel title={totallyRandomHeroes} heroCardList={heroesList} />
-      <Search />
+      <Search onChange={setQuery} onButtonClick={fetchSearchResults} />
     </ContentWrapper>
   );
 };

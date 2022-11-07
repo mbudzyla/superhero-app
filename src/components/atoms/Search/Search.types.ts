@@ -1,3 +1,8 @@
 import type { ReactElement } from 'react';
 
-export type Search = () => ReactElement;
+export interface SearchProps {
+  onChange: (query: string) => void;
+  onButtonClick: () => Promise<void>;
+}
+
+export type Search = (props: SearchProps) => ReactElement;
