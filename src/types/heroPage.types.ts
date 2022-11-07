@@ -11,6 +11,7 @@ export type HeroPageType = (props: HeroPageProps) => ReactElement;
 
 export interface Data {
   id: number;
+  slug: string;
   name: string;
   powerstats: {
     intelligence: number;

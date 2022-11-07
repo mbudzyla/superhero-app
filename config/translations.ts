@@ -8,4 +8,7 @@ export const translations: Translations = {
   heroCard: {
     checkBio: 'Check bio',
   },
+  heroCarousel: {
+    totallyRandomHeroes: 'Totally random heroes',
+  },
 };

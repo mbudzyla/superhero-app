@@ -6,4 +6,7 @@ export interface Translations {
   heroCard: {
     checkBio: 'Check bio';
   };
+  heroCarousel: {
+    totallyRandomHeroes: 'Totally random heroes';
+  };
 }

@@ -6,6 +6,7 @@ export interface HeroCardProps {
   gender: string;
   race: string;
   image: ImageProps;
+  slug: string;
 }
 
 export type HeroCardType = (props: HeroCardProps) => ReactElement;

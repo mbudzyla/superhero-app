@@ -5,7 +5,7 @@ export const SearchForm = styled.form`
   width: 80%;
   max-width: 575px;
   height: 44px;
-  margin: 20px auto;
+  margin: 40px auto;
   border: 1px solid ${({ theme }) => theme.palette.primary.grey};
   border-radius: 10px;
   display: flex;
@@ -14,10 +14,14 @@ export const SearchForm = styled.form`
 
 export const SearchInput = styled.input`
   border: none;
-  width: 90%;
   border-right: 1px solid ${({ theme }) => theme.palette.primary.grey};
   border-radius: 10px 0 0 10px;
   padding: 10px 20px;
+  width: 95%;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    width: 90%;
+  }
 `;
 
 export const SearchIcon = styled(Search)`
@@ -28,9 +32,12 @@ export const SearchIcon = styled(Search)`
 
 export const SearchButton = styled.button`
   border: none;
-  width: 10%;
   border-radius: 0 10px 10px 0;
   transition: 0.5s;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    width: 10%;
+  }
 
   &:hover {
     background: ${({ theme }) => theme.palette.primary.base};

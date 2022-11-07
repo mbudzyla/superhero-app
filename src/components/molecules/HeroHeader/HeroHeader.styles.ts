@@ -36,7 +36,7 @@ export const HeroBackground = styled.div`
 `;
 
 export const BackgroundBlur = styled.div`
-  background-color: rgba(0, 0, 0, 0.64);
+  background-color: rgba(58, 58, 58, 0.64);
   backdrop-filter: blur(16px);
   ${absoluteStyle}
 `;
