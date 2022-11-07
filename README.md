@@ -22,3 +22,8 @@ All packages are kept up-to-date
 
 Vulnerabilities only exists for dev environment.
 To check vulnerabilities use `npm audit --production`
+
+How to run?
+
+1. `node ./server/server.js`
+2. `npm run dev`
