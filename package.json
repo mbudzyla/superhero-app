@@ -10,6 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "lint": "eslint ./pages ./src --ext .ts --ext .tsx --ext .js",
     "lint:fix": "npm run lint -- --fix",
     "types-check": "tsc --noEmit",

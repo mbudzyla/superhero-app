@@ -11,4 +11,5 @@ export const translations: Translations = {
   heroCarousel: {
     totallyRandomHeroes: 'Totally random heroes',
   },
+  heroesNotFound: 'Heroes not found :(',
 };

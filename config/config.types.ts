@@ -4,9 +4,10 @@ export interface Translations {
     searchButtonAriaLabel: string;
   };
   heroCard: {
-    checkBio: 'Check bio';
+    checkBio: string;
   };
   heroCarousel: {
-    totallyRandomHeroes: 'Totally random heroes';
+    totallyRandomHeroes: string;
   };
+  heroesNotFound: string;
 }

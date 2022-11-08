@@ -1,2 +1,2 @@
 export { TextCard as default } from './TextCard';
-export type { TextCardProps } from './TextCard.types';
+export type { CardElementProps, TextCardProps } from './TextCard.types';

@@ -22,3 +22,9 @@ export const CarouselHeading = styled.h2`
     margin-bottom: 40px;
   }
 `;
+
+export const NotFound = styled.h2`
+  margin: auto;
+  font-size: 32px;
+  text-align: center;
+`;

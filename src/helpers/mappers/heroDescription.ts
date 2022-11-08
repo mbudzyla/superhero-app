@@ -1,16 +1,15 @@
-import type { CardElementProps } from '@atoms/TextCard/TextCard.types';
-import type { TextCardProps } from '@atoms/TextCard/TextCard.types';
+import type { CardElementProps, TextCardProps } from '@atoms/TextCard';
 
 import { camelCaseToText } from '@/helpers/camelCaseToText';
 import type { Data } from '@/types/heroPage.types';
 
-export const mapCardElements = (elements): CardElementProps[] => {
+export const mapCardElements = (elements: string[]): CardElementProps[] => {
   const cardElems: CardElementProps[] = [];
 
   for (const property in elements) {
     cardElems.push({
       property: camelCaseToText(property),
-      description: elements[property as keyof CardElementProps],
+      description: elements[property as keyof {}],
     });
   }
   return cardElems.filter(Boolean);
@@ -22,6 +21,6 @@ export const mapHeroAttributes = (data: Data): TextCardProps[] | null => {
 
   return keys.map(key => ({
     title: key,
-    elements: mapCardElements(data[key]),
+    elements: mapCardElements(data[key as keyof {}]),
   }));
 };

@@ -1,6 +1,7 @@
 import type { HeroCardProps } from './HeroCard.types';
 
 export const heroCardMocks: HeroCardProps = {
+  slug: '1-a-bomb',
   name: 'A-Bomb',
   gender: 'Male',
   race: 'Human',

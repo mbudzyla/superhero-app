@@ -9,9 +9,9 @@ import type { UseHomePageTemplate } from './HomePageTemplate.types';
 const fifteenSeconds = 15 * 1000;
 
 export const useHomepageTemplate: UseHomePageTemplate = initialHeroes => {
+  const [query, setQuery] = useState<string>();
   const [randomHeroes, setRandomHeroes] =
     useState<HeroCardProps[]>(initialHeroes);
-  const [query, setQuery] = useState<string>();
 
   const fetchRandoms = async (): Promise<void> => {
     const { data } = await axiosClient.get(`/get_randoms`);
@@ -34,18 +34,16 @@ export const useHomepageTemplate: UseHomePageTemplate = initialHeroes => {
   };
 
   useEffect(() => {
-    if (query) return () => clearInterval(interval);
-
-    const interval = setInterval(() => {
+    if (query === '') {
       fetchRandoms();
-    }, fifteenSeconds);
 
-    return () => clearInterval(interval);
-  }, []);
+      const interval = setInterval(() => {
+        fetchRandoms();
+      }, fifteenSeconds);
 
-  useEffect(() => {
-    if (!query) fetchRandoms();
-    const searchTimeout = setTimeout(fetchSearchResults, 2000);
+      return () => clearInterval(interval);
+    }
+    const searchTimeout = setTimeout(fetchSearchResults, 1000);
 
     return () => clearTimeout(searchTimeout);
   }, [query]);
