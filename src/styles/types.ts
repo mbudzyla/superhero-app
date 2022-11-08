@@ -1,15 +1,10 @@
 import 'styled-components';
 
-declare module 'styled-components' {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  export interface DefaultTheme extends Theme {}
-}
+import type { ReactElement, ReactNode } from 'react';
 
 export interface SingleColorPalette {
   base: string;
-  background: {
-    [key in '100' | '200' | '300']: string;
-  };
+  grey?: string;
   text: string;
 }
 
@@ -17,7 +12,7 @@ export type Palette = {
   [key in BaseColors]: SingleColorPalette;
 };
 
-export type ViewportName = 'desktop' | 'tablet' | 'mobile';
+export type ViewportName = 'desktop' | 'tablet' | 'mobile' | 'largeDesktop';
 export type ZIndexes = 'header' | 'footer';
 export type BaseColors = 'primary' | 'secondary';
 
@@ -26,7 +21,17 @@ export interface Theme {
   media: {
     [key in ViewportName]: string;
   };
+  header: string;
+  maxWidth: string;
+  font: string;
   zIndexes: {
     [key in ZIndexes]: number;
   };
 }
+
+export type Children =
+  | ReactNode
+  | Array<ReactNode>
+  | ReactElement
+  | Array<ReactElement>
+  | string;

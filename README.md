@@ -18,3 +18,13 @@ All packages are kept up-to-date
 
 * `npm >= 7`
 * `node >= 14`
+
+
+Vulnerabilities only exists for dev environment.
+To check vulnerabilities use `npm audit --production`
+
+How to run?
+
+1. Run `node ./server/server.js`
+2. Run `npm run dev`
+3. Open your browser and go to `localhost:3000`

@@ -1,31 +1,33 @@
 import type { Theme } from './types';
 
-const theme: Theme = {
+export const breakpoints = {
+  largeDesktop: 1140,
+  desktop: 992,
+  tablet: 768,
+  mobile: 320,
+};
+
+export const theme: Theme = {
   media: {
-    mobile: '',
-    tablet: '',
-    desktop: '',
+    mobile: `screen and (min-width: ${breakpoints.mobile}px)`,
+    tablet: `screen and (min-width: ${breakpoints.tablet}px)`,
+    desktop: `screen and (min-width: ${breakpoints.desktop}px)`,
+    largeDesktop: `screen and (min-width: ${breakpoints.largeDesktop}px)`,
   },
+  header: '80px',
+  maxWidth: `${breakpoints.largeDesktop}px`,
   palette: {
     primary: {
-      base: '#000000',
+      base: '#274060',
       text: '#FFFFFF',
-      background: {
-        '100': '#FFFFFF',
-        '200': '#DDDDDD',
-        '300': '#AAAAAA',
-      },
+      grey: '#919293',
     },
     secondary: {
-      base: '#FFFFFF',
+      base: '#5899E2',
       text: '#000000',
-      background: {
-        '100': '#000000',
-        '200': '#333333',
-        '300': '#555555',
-      },
     },
   },
+  font: 'Maven Pro',
   zIndexes: {
     footer: 10,
     header: 10,
