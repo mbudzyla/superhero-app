@@ -25,5 +25,6 @@ To check vulnerabilities use `npm audit --production`
 
 How to run?
 
-1. `node ./server/server.js`
-2. `npm run dev`
+1. Run `node ./server/server.js`
+2. Run `npm run dev`
+3. Open your browser and go to `localhost:3000`
